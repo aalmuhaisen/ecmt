@@ -2,13 +2,13 @@
 rm(list = ls())
 
 #run package 
-library(car,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(zoo,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(sandwich,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(lmtest,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(strucchange,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(tseries,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(forecast,lib.loc="/Users/computer/Desktop/R/Libraries")
+library(car)
+library(zoo)
+library(sandwich)
+library(lmtest)
+library(strucchange)
+library(tseries)
+library(forecast)
 
 
 

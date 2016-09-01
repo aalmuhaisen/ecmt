@@ -2,16 +2,16 @@
 rm(list=ls())
 
 #run the needed libraries
-library(zoo,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(dynlm,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(e1071,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(timeDate,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(forecast,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(timeSeries,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(fBasics,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(plotrix,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(tseries,lib.loc="/Users/computer/Desktop/R/Libraries")
-library(nortest,lib.loc="/Users/computer/Desktop/R/Libraries")
+library(zoo)
+library(dynlm)
+library(e1071)
+library(timeDate)
+library(forecast)
+library(timeSeries)
+library(fBasics)
+library(plotrix)
+library(tseries)
+library(nortest)
 
 
 #Q1- Importing the data
