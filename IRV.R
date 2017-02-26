@@ -171,8 +171,8 @@ plot(irf390)
 
 
 #Q6
-#There will be not change on the forecast of outpout and prices since Wu-Xia cover only the 
-#period from 2009 onward which is out of our sample used to build the model
+#There will be no change on the forecast of outpout and prices since Wu-Xia covers only the 
+#period from 2009 onward which is out of the sample used to build the model
 
 regdatawu <- ts.intersect(dgdp,ddcpi,dwuxia)
 colnames(regdatawu) <- c("dgdp","ddcpi","dwuxia")

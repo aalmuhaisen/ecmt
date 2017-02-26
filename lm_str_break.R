@@ -41,11 +41,10 @@ acf(na.omit(pay.model$residuals),main="Gap correlation")
 #Q2
 adf.test(na.omit(pay.model$residuals),alternative = "stationary")
 adf.test(pay,alternative = "stationary")
-#since the test on the residuals of the linear trend and full data result the same value we can 
-#conclude that employee data is not stationary because of a stochastic trend (no determinestic trend).
+#employee data is not stationary because of stochastic trend 
 
 #Q3
-#data is non-stationary take diff to make it stationary
+#data is not stationary, take diff to make it stationary
 diffpay <- diff(pay)
 adf.test(diffpay,alternative = "stationary")
 #data is stationary now
@@ -168,12 +167,6 @@ abline(h=1.96, col="red")
 par(new=T)
 abline(h=-1.96, col="red")
 
-#The relation is not stable over time since the coefficients became statically different sometimes
-#Economecally Okun's law in not stable, because due to some economical events and 
-#changes on regulations the relationship between Unemployment and GDP growth change in stringht in 
-#favor of other parameters that determine GDP gowth and Unemployment rate which affect both by different 
-#percentage and different periods depending on the relation between them.
-
 #Q2
 #full data reg
 gonuctotalreg = lm(formula=dgdp~dunemp, data = as.data.frame(regdata))
@@ -254,10 +247,6 @@ lines(gonuse1h, col="red", lty=2)
 lines(gonuse2h, col="red", lty=2)
 abline(h=gonuctotalreg$coefficients[2], col="brown", lty=4,lwd=2)
 
-#The regressions are different from eachothers because different factors affect both Unemployment and GDP growth 
-#so the coefficient will be different because even if GDP growth affect Unemployment by sertain percentage 
-#Unemployment does not affect GDP growth by the same percentage duo to other economecal factors that determain both 
-#Unemployment rate and GDP growth.
 
 
 #Q3 QLR
